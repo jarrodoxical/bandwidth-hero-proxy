@@ -33,3 +33,7 @@ on how to setup Node.js on Ubuntu.
 DigitalOcean also provides an
 [easy way](https://www.digitalocean.com/products/one-click-apps/node-js/) to setup a server ready to
 host Node.js apps.
+
+Requires sudo to write the cert files on first run `nvm use 8.6.0; sudo node server.js` then `ctrl-c` Now in the same command prompt enter `PORT=8444 LOGIN=admin PASSWORD=admin pm2 start server.js` to keep it running
+
+Be sure to visit https://yourserverip:8444/ in browser to add the security exception and use standard login format in the browser add-on https://admin:admin@yourserverip:8444/
